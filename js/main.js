@@ -18,7 +18,7 @@ var opening = d3.select(".whitebgd").append("p").style("padding", "50px").style(
 // -------------------- prepare for the first map --------------------
 var firstmap = d3.select(".whitebgd").append("div").attr("class", "firstmap").style("position", "relative");
 var title1div = d3.select(".firstmap").append("div").attr("class", "title1div").style("text-align", "center")
-var title1 = d3.select(".title1div").append("img").attr("src", "img/title1.jpg").attr("width", 350)
+var title1 = d3.select(".title1div").append("img").attr("src", "/img/title1.jpg").attr("width", 350)
 // invisible canvas for states
 var polyCanvas = d3.select(".firstmap")
 	.append("canvas")
@@ -61,18 +61,18 @@ var polyContext = polyCanvas.node().getContext("2d");
 var dotContext = dotCanvas.node().getContext("2d");
 // others
 var figure1 = d3.select(".firstmap").append("div").attr("class", "figure1").style("text-align", "center")
-var figure1_2 = d3.select(".figure1").append("img").attr("src", "img/figure1_2.jpg").attr("width", 400)
-var figure1_1 = d3.select(".figure1").append("img").attr("src", "img/figure1_1.jpg").attr("width", 400)
+var figure1_2 = d3.select(".figure1").append("img").attr("src", "/img/figure1_2.jpg").attr("width", 400)
+var figure1_1 = d3.select(".figure1").append("img").attr("src", "/img/figure1_1.jpg").attr("width", 400)
 var text1 = d3.select(".firstmap").append("p").style("padding-left", "50px").style("padding-right", "50px").style("font-size", "16px")
   .text("In 2019, there are totally 2.782 million bee colonies in US. The colonies are distributed unevenly. North Dakota and South Dakota always have the highest density of bee colonies, followed by Florida and California. Montana is another major state regarding the total number. Generally, there are more colonies in the north than the south. Over the past 10 years, the number of bee colonies increased slightly, but the spatial distribution rarely changed. However, as we have a 10% increase in colony amount, does that mean we can expect a significant increase in honey production?")
 
 // -------------------- prepare for the second map --------------------
 var secondmap = d3.select(".whitebgd").append("div").attr("class", "secondmap")
-var figure2_1 = d3.select(".secondmap").append("img").attr("src", "img/figure2_1.jpg").attr("width", 550).style("float", "left")
+var figure2_1 = d3.select(".secondmap").append("img").attr("src", "/img/figure2_1.jpg").attr("width", 550).style("float", "left")
 var text2_1 = d3.select(".secondmap").append("p").style("padding-left", "50px").style("padding-right", "50px").style("font-size", "16px")
   .text("Over the past 10 years, there was a relationship between the total honey production in US and the total number of bee colonies in some specific years, for example, they both dropped dramatically in 2011 and both went up in 2014. However, for the 10-year trend, the honey production did not increase as we expected to see, and since 2014, it has actually tended to decrease. This is the result of a drop in yield. Over the past 10 years, the trend of yield per colony perfectly fitted the trend of production. As we are now having an unsatisfactory honey production and yield in US, does every state suffer the same?")
 var title2div = d3.select(".secondmap").append("div").attr("class", "title2div").style("text-align", "center")
-var title2 = d3.select(".title2div").append("img").attr("src", "img/title2.jpg").attr("width", 800)
+var title2 = d3.select(".title2div").append("img").attr("src", "/img/title2.jpg").attr("width", 800)
 // svg for map
 var map2 = d3.select(".secondmap")
 	.append("svg")
@@ -104,7 +104,7 @@ var text2_3 = d3.select(".secondmap").append("p").style("padding-left", "50px").
 // -------------------- prepare for the third map --------------------
 var thirdmap = d3.select(".whitebgd").append("div").attr("class", "thirdmap")
 var title3div = d3.select(".thirdmap").append("div").attr("class", "title3div").style("text-align", "center")
-var title3 = d3.select(".title3div").append("img").attr("src", "img/title3.jpg").attr("width", 680)
+var title3 = d3.select(".title3div").append("img").attr("src", "/img/title3.jpg").attr("width", 680)
 // svg for map
 var map3 = d3.select(".thirdmap")
 	.append("svg")
@@ -120,19 +120,19 @@ var slider3 = d3.select(".thirdmap")
 	.append("div")
 	.attr("id", "slider-time3")
 // others
-var figure3_1 = d3.select(".thirdmap").append("img").attr("src", "img/figure3_1.jpg").attr("width", 380).style("float", "left")
+var figure3_1 = d3.select(".thirdmap").append("img").attr("src", "/img/figure3_1.jpg").attr("width", 380).style("float", "left")
 var text3_1 = d3.select(".thirdmap").append("p").style("padding-left", "50px").style("padding-right", "50px").style("font-size", "16px")
   .text("Normally, the bee colony loss has a seasonal pattern, where we lose much more during winter than summer. From April 2018 to March 2019, an average beekeeper in US lost 40.7 percent of his/her bee colonies (then he/she had to add new ones). Particularly, the winter loss was 37.7 percent, which is the highest winter loss ever and is 8.9 percent points higher than the 13-year average. The result was very concerning because the industry has already suffered from a decade of high winter losses! From April 2019 to March 2020, 43.7 percent of US bee colonies were lost, and this year, the second highest summer loss is remarkable. Researchers believe that the high summer loss was still a reflection of the last poor winter.")
 var text3_2 = d3.select(".thirdmap").append("p").style("padding-left", "50px").style("padding-right", "50px").style("font-size", "16px")
   .text("Over the past two years, New Mexico and Arkansas suffered extreme losses. States in the south and states close to the Great Lakes generally lost more colonies, especially during winter. One interesting fact is that the rest of country tended to have a higher summer loss than winter loss. During the past two years, to most states, varroa mites are the most significant colony health stressor and almost half of colonies suffered from it. Other pests and pesticides are also destructive. These health stressors affected bee colonies' productivity, and threatened the colonies' survival.")
-var figure3_2 = d3.select(".thirdmap").append("img").attr("src", "img/figure3_2.jpg").attr("width", 380).style("float", "left").style("padding-left", "50px").style("padding-right", "30px")
+var figure3_2 = d3.select(".thirdmap").append("img").attr("src", "/img/figure3_2.jpg").attr("width", 380).style("float", "left").style("padding-left", "50px").style("padding-right", "30px")
 var text3_3 = d3.select(".thirdmap").append("p").style("padding-left", "50px").style("padding-right", "50px").style("font-size", "16px")
   .text("While honey production in US tends to continue declining due to mutiple reasons, the demand of honey has been rising. According to the National Honey Board, between 2012 and 2015, the consumption of liquid honey grew by over 25 percent. It is also reported that Americans are consuming more honey crystals. Additionally, honey is being added to more foods and even wine. USDA data indicates that US per capita consumption of honey has reached 1.51 pounds per person. Resulted from the growing demand and the weak production, the nationwide honey price has significantly risen. How did it rise?")
 
 // -------------------- prepare for the forth map --------------------
 var forthmap = d3.select(".whitebgd").append("div").attr("class", "forthmap")
 var title4div = d3.select(".forthmap").append("div").attr("class", "title4div").style("text-align", "center")
-var title4 = d3.select(".title4div").append("img").attr("src", "img/title4.jpg").attr("width", 680)
+var title4 = d3.select(".title4div").append("img").attr("src", "/img/title4.jpg").attr("width", 680)
 var map4 = d3.select(".forthmap")
 	.append("svg")
 	.attr("width", width)
@@ -142,7 +142,7 @@ var slider4 = d3.select(".forthmap")
 	.append("div")
 	.attr("id", "slider-time4")
 // others
-var figure4_1 = d3.select(".forthmap").append("img").attr("src", "img/figure4_1.jpg").attr("width", 400).style("float", "left")
+var figure4_1 = d3.select(".forthmap").append("img").attr("src", "/img/figure4_1.jpg").attr("width", 400).style("float", "left")
 var text4_1 = d3.select(".forthmap").append("p").style("padding-left", "50px").style("padding-right", "50px").style("font-size", "16px")
   .text("From 2010 to 2014, the honey price went up rapidy until 2014 when the honey production peaked up. The honey price then dropped a little bit and increased slowly until 2018. In 2019, for some reasons (e.g., the honey production climbed slightly), the price dropped a lot. Spatially, Virginia and New Jersey were always first two states that responded to the rising price. States in the eastsouth and states close to the Great Lakes have higher honey price, and the price did not drop when there was a nationwide trend of decline. The highest price is 5 times of the lowest price!")
 var text4_2 = d3.select(".forthmap").append("p").style("padding-left", "50px").style("padding-right", "50px").style("font-size", "16px")
@@ -151,7 +151,7 @@ var text4_2 = d3.select(".forthmap").append("p").style("padding-left", "50px").s
 // -------------------- prepare for the fifth map --------------------
 var fifthmap = d3.select(".whitebgd").append("div").attr("class", "fifthmap")
 var title5div = d3.select(".fifthmap").append("div").attr("class", "title5div").style("text-align", "center")
-var title5 = d3.select(".title5div").append("img").attr("src", "img/title5.jpg").attr("width", 350)
+var title5 = d3.select(".title5div").append("img").attr("src", "/img/title5.jpg").attr("width", 350)
 // svg for buttons
 var allButtons = d3.select(".fifthmap")
   .append("svg")
@@ -163,7 +163,7 @@ var map5 = d3.select(".fifthmap")
 	.style("text-align", "center")
 var map5exim = d3.select(".fifthmapdiv")
 	.append("img")
-	.attr("src", "img/ex.jpg")
+	.attr("src", "/img/ex.jpg")
 	.attr("width", 800)
 // click button and update
 var radio = [{"name": "ex"}, {"name": "im"}]
@@ -184,7 +184,7 @@ var button = allButtons.selectAll(".button")
 		map5.selectAll("*").remove();
 		var map5exim = d3.select(".fifthmapdiv")
 		  .append("img")
-			.attr("src", "img/" + d.name + ".jpg")
+			.attr("src", "/img/" + d.name + ".jpg")
 			.attr("width", 800)
   })
 	.on("mouseover", function(d){
@@ -213,7 +213,7 @@ var buttonlabel = allButtons.selectAll(".buttonlabel")
 		map5.selectAll("*").remove();
 		var map5exim = d3.select(".fifthmapdiv")
 		  .append("img")
-			.attr("src", "img/" + d.name + ".jpg")
+			.attr("src", "/img/" + d.name + ".jpg")
 			.attr("width", 800)
   })
 	.on("mouseover", function(d){
@@ -228,7 +228,7 @@ var buttonlabel = allButtons.selectAll(".buttonlabel")
 var text5_1 = d3.select(".fifthmap").append("p").style("padding-left", "50px").style("padding-right", "50px").style("font-size", "16px")
   .text("In 2018 the US imported over 190,000 tonnes of honey. Our honey are mosty from three countries: India, Vietnam and Argentina, which altogether account for nearly 63 percent of US honey imports. We also exported 3,700+ tonnes of honey to a few countries like Philippines and Canada.")
 var lastdiv = d3.select(".fifthmap").append("div").attr("class", "lastdiv").style("text-align", "center")
-var last = d3.select(".lastdiv").append("img").attr("src", "img/last.jpg").attr("width", 950)
+var last = d3.select(".lastdiv").append("img").attr("src", "/img/last.jpg").attr("width", 950)
 
 // -------------------- draw all maps --------------------
 // load data and call the callback function when ready
