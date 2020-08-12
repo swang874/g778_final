@@ -1,0 +1,59 @@
+/*Stylesheet by Shujin Wang, 2020*/
+body {
+  background-color: #fd8d3c;
+  font-family: 'Muli';
+  font-size: 14px;
+}
+
+.whitebgd {
+  width: 1000px;
+  margin: auto;
+  background-color: white;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+.basestates {
+  stroke: white;
+  fill: #e6e6e6;
+  stroke-width: 0.5px;
+  stroke-linecap: round;
+}
+
+.hoverstates {
+  stroke: white;
+  fill: white;
+  stroke-width: 0.5px;
+  stroke-linecap: round;
+  opacity: 0;
+}
+
+.states2 {
+  stroke: white;
+  stroke-width: 0.5px;
+  stroke-linecap: round;
+}
+
+.states3 {
+  stroke: white;
+  stroke-width: 0.5px;
+  stroke-linecap: round;
+}
+
+.hex {
+  stroke: white;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.d3-tip {
+  line-height: 1;
+  padding: 10px;
+  background: rgba(255,255,255, 0.9);
+  color: black;
+  border: 1px;
+  border-radius: 5px;
+}
